@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Projects | Your Business Seen</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1000px;
+      padding: 60px 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      color: #aeb7c2;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .project {
+      display: block;
+      padding: 45px 25px;
+      border: 1px solid #303844;
+      border-radius: 24px;
+      background: #151b23;
+      color: white;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      border-color: white;
+    }
+
+    .icon {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 25px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: bold;
+      background: white;
+      color: #111;
+    }
+
+    .renew .icon {
+      background: #d71920;
+      color: white;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .project p {
+      margin: 0;
+      color: #aeb7c2;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 55px;
+      color: #66717e;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <h1>Live Projects</h1>
+
+    <p class="subtitle">
+      Explore what we're creating.
+    </p>
+
+    <section class="projects">
+
+      <a class="project renew"
+         href="https://knee-otter-03184327.figma.site/">
+        <div class="icon">R</div>
+        <h2>Renew</h2>
+        <p>
+          Explore the Renew Home Improvement project.
+        </p>
+      </a>
+
+      <a class="project"
+         href="golden-apple.html">
+        <div class="icon">🍎</div>
+        <h2>Golden Apple</h2>
+        <p>
+          Explore the Golden Apple homeschool project.
+        </p>
+      </a>
+
+    </section>
+
+    <footer>
+      Your Business Seen
+    </footer>
+
+  </main>
+
+</body>
+</html>

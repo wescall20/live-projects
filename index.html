@@ -1,609 +1,141 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="description" content="Golden Apple offers experienced Christian guidance for Florida homeschool families: evaluations, curriculum, special needs, and high-school planning.">
-
-<title>Golden Apple | Homeschool Guidance</title>
-
-<style>
-
-:root {
-
-  --navy: #20364a;
-
-  --gold: #e4bd62;
-
-  --cream: #faf7ef;
-
-  --white: #ffffff;
-
-  --text: #293745;
-
-  --line: #dedbd2;
-
-}
-
-* { box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
-
-body {
-
-  margin: 0;
-
-  color: var(--text);
-
-  background: var(--cream);
-
-  font: 17px/1.65 system-ui, -apple-system, sans-serif;
-
-}
-
-a { color: inherit; text-underline-offset: 4px; }
-
-a:focus-visible {
-
-  outline: 3px solid #9a6a14;
-
-  outline-offset: 5px;
-
-}
-
-.wrap { width: min(1100px, 90%); margin: auto; }
-
-header { background: white; border-bottom: 1px solid var(--line); }
-
-.header-inner {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 24px;
-
-  padding: 22px 0;
-
-  flex-wrap: wrap;
-
-}
-
-.brand {
-
-  font: bold 29px Georgia, serif;
-
-  text-decoration: none;
-
-  color: var(--navy);
-
-}
-
-nav { display: flex; gap: 20px; flex-wrap: wrap; }
-
-nav a { font-size: 15px; text-decoration: none; }
-
-nav a:hover { text-decoration: underline; }
-
-.hero { background: var(--navy); color: white; padding: 85px 0; }
-
-.eyebrow {
-
-  text-transform: uppercase;
-
-  letter-spacing: .14em;
-
-  font-size: 12px;
-
-  font-weight: 750;
-
-}
-
-.hero .eyebrow { color: var(--gold); }
-
-h1, h2, h3 { font-family: Georgia, serif; line-height: 1.15; }
-
-h1 { font-size: clamp(38px, 6vw, 68px); max-width: 850px; margin: 20px 0; }
-
-h2 { font-size: clamp(29px, 4vw, 42px); margin: 0 0 20px; }
-
-h3 { font-size: 27px; margin: 0 0 18px; }
-
-.hero p { max-width: 710px; font-size: 20px; }
-
-.actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
-
-.button {
-
-  display: inline-block;
-
-  background: var(--navy);
-
-  color: white;
-
-  padding: 13px 22px;
-
-  border-radius: 6px;
-
-  text-decoration: none;
-
-  font-size: 16px;
-
-  font-weight: 700;
-
-}
-
-.button:hover { filter: brightness(1.15); }
-
-.button.gold { background: var(--gold); color: var(--navy); }
-
-.button.light { background: white; color: var(--navy); }
-
-section { padding: 65px 0; scroll-margin-top: 24px; }
-
-.intro { max-width: 730px; }
-
-.grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  gap: 24px;
-
-  margin-top: 30px;
-
-}
-
-.card {
-
-  background: white;
-
-  padding: 30px;
-
-  border: 1px solid var(--line);
-
-  border-radius: 10px;
-
-}
-
-.card p { margin: 12px 0; }
-
-.card ul { padding-left: 22px; }
-
-.price { font-size: 23px; font-weight: 750; color: var(--navy); }
-
-.small { font-size: 14px; }
-
-.note {
-
-  margin-top: 28px;
-
-  padding: 24px;
-
-  border-left: 4px solid var(--gold);
-
-  background: white;
-
-}
-
-.white { background: white; }
-
-.steps {
-
-  display: grid;
-
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-
-  gap: 26px;
-
-  padding-left: 24px;
-
-}
-
-.steps li { padding-left: 4px; }
-
-.steps strong { display: block; font-size: 18px; }
-
-.about { max-width: 800px; }
-
-.credentials {
-
-  border-top: 1px solid var(--line);
-
-  padding-top: 22px;
-
-  font-weight: 650;
-
-}
-
-.contact { background: var(--navy); color: white; }
-
-.contact p { max-width: 720px; }
-
-.contact a { overflow-wrap: anywhere; }
-
-footer { padding: 25px 0; font-size: 14px; }
-
-.skip { position: absolute; left: -9999px; }
-
-.skip:focus {
-
-  left: 12px; top: 12px; background: white;
-
-  color: var(--navy); padding: 12px; z-index: 10;
-
-}
-
-@media (max-width: 720px) {
-
-  .grid, .steps { grid-template-columns: 1fr; }
-
-  .hero { padding: 55px 0; }
-
-  section { padding: 45px 0; }
-
-  .card { padding: 24px; }
-
-  nav { gap: 12px 18px; }
-
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  html { scroll-behavior: auto; }
-
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Projects | Your Business Seen</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1000px;
+      padding: 60px 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      color: #aeb7c2;
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .project {
+      display: block;
+      padding: 45px 25px;
+      border: 1px solid #303844;
+      border-radius: 24px;
+      background: #151b23;
+      color: white;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      border-color: white;
+    }
+
+    .icon {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 25px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: bold;
+      background: white;
+      color: #111;
+    }
+
+    .renew .icon {
+      background: #d71920;
+      color: white;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .project p {
+      margin: 0;
+      color: #aeb7c2;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 55px;
+      color: #66717e;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<a class="skip" href="#main">Skip to content</a>
-
-<header>
-
-  <div class="wrap header-inner">
-
-    <a class="brand" href="#main">Golden Apple</a>
-
-    <nav aria-label="Main navigation">
-
-      <a href="#services">Services</a>
-
-      <a href="#how-it-works">How It Works</a>
-
-      <a href="#about">About Laurie</a>
-
-      <a href="#support">Additional Support</a>
-
-      <a href="#contact">Contact</a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-<main id="main">
-
-  <section class="hero">
-
-    <div class="wrap">
-
-      <div class="eyebrow">Experienced Christian homeschool guidance</div>
-
-      <h1>Take the next wise step in your child’s education.</h1>
-
-      <p>Experienced Christian guidance for Florida homeschool families navigating evaluations, curriculum, special needs, high school and college-credit opportunities.</p>
-
-      <p>See your child clearly. Understand your choices. Move forward with confidence.</p>
-
-      <div class="actions">
-
-        <a class="button gold" href="#services">Choose your service</a>
-
-        <a class="button light" href="#contact">Ask Laurie a question</a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="services">
-
-    <div class="wrap">
-
-      <div class="intro">
-
-        <div class="eyebrow">Support for the decision in front of you</div>
-
-        <h2>What do you need help with?</h2>
-
-        <p>Choose the situation that sounds most like yours. Each service focuses on your learner and a clear next step.</p>
-
-      </div>
-
-      <div class="grid">
-
-        <article class="card" id="evaluation">
-
-          <h3>Annual Homeschool Evaluation</h3>
-
-          <p><strong>For families who need their annual evaluation.</strong></p>
-
-          <p>A supportive evaluation of your student’s learning and progress with an experienced Florida-certified teacher.</p>
-
-          <p><strong>What you will receive</strong></p>
-
-          <ul>
-
-            <li>Review of the student’s portfolio</li>
-
-            <li>Conversation with the student</li>
-
-            <li>Evaluation of demonstrated educational progress</li>
-
-            <li>Completed evaluation documentation</li>
-
-            <li>Clear instructions for the next administrative step</li>
-
-          </ul>
-
-          <p><strong>How it works:</strong> Contact Laurie to arrange your evaluation and receive instructions for preparing materials and scheduling.</p>
-
-          <p class="price">$45 per hour</p>
-
-          <p class="small">Ask Laurie about Step Up eligibility and payment arrangements.</p>
-
-          <a class="button" href="mailto:lacfsuphd@yahoo.com?subject=Annual%20Homeschool%20Evaluation">Request an evaluation</a>
-
-        </article>
-
-        <article class="card" id="consultation">
-
-          <h3>Next Wise Step Homeschool Consultation</h3>
-
-          <p><strong>For families deciding what comes next.</strong></p>
-
-          <p>Bring the question that is keeping your family stuck. Laurie will help you distinguish what matters, understand your choices and identify the next wise step.</p>
-
-          <p>Topics can include starting homeschooling, curriculum selection, routines, concerns about progress and rebuilding an overwhelmed homeschool.</p>
-
-          <p><strong>What you will receive</strong></p>
-
-          <ul>
-
-            <li>Review of your family’s immediate concern</li>
-
-            <li>Experienced guidance specific to your child</li>
-
-            <li>A clear recommended next step</li>
-
-            <li>Written follow-up notes or recommendations</li>
-
-          </ul>
-
-          <p><strong>How it works:</strong> Email Laurie a short description of your question to arrange a consultation.</p>
-
-          <p class="price">$45 per hour</p>
-
-          <a class="button" href="mailto:lacfsuphd@yahoo.com?subject=Next%20Wise%20Step%20Consultation">Request a consultation</a>
-
-        </article>
-
-        <article class="card" id="special-needs">
-
-          <h3>Special-Needs Homeschool Strategy Session</h3>
-
-          <p><strong>For learners who need a more individualized approach.</strong></p>
-
-          <p>Build a learning approach around the child in front of you. Laurie brings certification in Exceptional Student Education and experience supporting developmental, behavioral, emotional, language, learning and physical needs.</p>
-
-          <p><strong>What you will receive</strong></p>
-
-          <ul>
-
-            <li>Discussion of your student’s strengths and challenges</li>
-
-            <li>Review of the current learning situation</li>
-
-            <li>Practical adjustments or educational options</li>
-
-            <li>Prioritized recommendations for what to do next</li>
-
-          </ul>
-
-          <p><strong>How it works:</strong> Contact Laurie about your learner’s needs to arrange a strategy session.</p>
-
-          <p class="price">$45 per hour</p>
-
-          <p class="small">Ask Laurie about Step Up eligibility and payment arrangements.</p>
-
-          <a class="button" href="mailto:lacfsuphd@yahoo.com?subject=Special-Needs%20Strategy%20Session">Request a strategy session</a>
-
-          <p class="small">Every learner deserves to be seen clearly and supported thoughtfully.</p>
-
-        </article>
-
-        <article class="card" id="planning">
-
-          <h3>High-School and College-Credit Planning</h3>
-
-          <p><strong>For families preparing for graduation and future opportunities.</strong></p>
-
-          <p>Turn today’s homeschool decisions into a clearer path toward graduation, college credit, skilled work and future opportunity.</p>
-
-          <p>Explore course and credit planning, CLEP preparation pathways, dual-credit opportunities, apprenticeships and skill-based learning.</p>
-
-          <p><strong>What you will receive</strong></p>
-
-          <ul>
-
-            <li>Review of the student’s goals and current position</li>
-
-            <li>A recommended educational pathway</li>
-
-            <li>Priority actions and relevant options</li>
-
-            <li>Written planning notes</li>
-
-          </ul>
-
-          <p><strong>How it works:</strong> Contact Laurie with your student’s current stage and goals to arrange a planning session.</p>
-
-          <p class="price">$45 per hour</p>
-
-          <a class="button" href="mailto:lacfsuphd@yahoo.com?subject=High-School%20and%20College-Credit%20Planning">Request a planning session</a>
-
-        </article>
-
-      </div>
-
-      <div class="note">
-
-        <strong>Still uncertain?</strong>
-
-        You do not have to diagnose everything before asking for help.
-
-        Send Laurie a short description of what is happening, and she will
-
-        help you identify the appropriate service.
-
-        <p><a href="mailto:lacfsuphd@yahoo.com?subject=Help%20Me%20Choose%20a%20Service">Help me choose a service →</a></p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="how-it-works" class="white">
-
-    <div class="wrap">
-
-      <h2>Experienced guidance. A clear next step.</h2>
-
-      <ol class="steps">
-
-        <li><strong>Choose</strong>Select the service that most closely matches your family’s current need.</li>
-
-        <li><strong>Tell us about your learner</strong>Contact Laurie to discuss your needs, scheduling and payment arrangements.</li>
-
-        <li><strong>Meet with Laurie</strong>Receive experienced, personal guidance focused on your child and family.</li>
-
-        <li><strong>Move forward</strong>Leave with greater clarity and a specific next step.</li>
-
-      </ol>
-
-    </div>
-
-  </section>
-
-  <section id="about">
-
-    <div class="wrap">
-
-      <div class="about">
-
-        <div class="eyebrow">Meet your guide</div>
-
-        <h2>Meet Dr. Laurie Callihan</h2>
-
-        <p>Laurie is an educator, homeschool parent and experienced guide for families who need more than another list of resources.</p>
-
-        <p>Her work brings together more than 20 years of public-school teaching, homeschooling five children, special-needs expertise, curriculum guidance, evaluations, testing and high-school opportunity planning.</p>
-
-        <p>She helps parents understand the learner entrusted to them and make sound educational decisions without turning the home into another institutional classroom.</p>
-
-        <p class="credentials">Ph.D. in Science Education · Florida-certified teacher · ESE, K–6, Biology and Middle School Science · Homeschool parent of five · Author and national speaker</p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="support" class="white">
-
-    <div class="wrap">
-
-      <h2>Additional support</h2>
-
-      <div class="grid">
-
-        <article class="card">
-
-          <h3>Private Tutoring</h3>
-
-          <p>Limited tutoring availability for students ages 8–12 and qualified CLEP-preparation students.</p>
-
-          <p>Contact Laurie for availability, scheduling and pricing.</p>
-
-          <a class="button" href="mailto:lacfsuphd@yahoo.com?subject=Tutoring%20Availability">Check tutoring availability</a>
-
-        </article>
-
-        <article class="card">
-
-          <h3>Testing Services</h3>
-
-          <p>Testing support and guidance in selecting an appropriate assessment.</p>
-
-          <p>Contact Laurie to discuss testing options, costs and scheduling.</p>
-
-          <a class="button" href="mailto:lacfsuphd@yahoo.com?subject=Testing%20Options">Ask about testing options</a>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="contact" class="contact">
-
-    <div class="wrap">
-
-      <h2>You do not have to solve the whole homeschool today.</h2>
-
-      <p>Choose the service that fits the decision in front of you, and take the next wise step.</p>
-
-      <div class="actions">
-
-        <a class="button gold" href="mailto:lacfsuphd@yahoo.com?subject=Golden%20Apple%20Homeschool%20Question">Email Laurie</a>
-
-        <a class="button light" href="tel:+13219471211">Call 321-947-1211</a>
-
-      </div>
-
-      <p>Email: <a href="mailto:lacfsuphd@yahoo.com">lacfsuphd@yahoo.com</a></p>
-
-      <p class="small">To get started, share the service you are interested in and a brief description of your question. Laurie will help you with the next step.</p>
-
-    </div>
-
-  </section>
-
-</main>
-
-<footer>
-
-  <div class="wrap">© Golden Apple · Dr. Laurie Callihan · Wisdom within reach.</div>
-
-</footer>
+  <main class="page">
+
+    <h1>Live Projects</h1>
+
+    <p class="subtitle">
+      Explore what we're creating.
+    </p>
+
+    <section class="projects">
+
+      <a class="project renew"
+         href="https://knee-otter-03184327.figma.site/">
+        <div class="icon">R</div>
+        <h2>Renew</h2>
+        <p>
+          Explore the Renew Home Improvement project.
+        </p>
+      </a>
+
+      <a class="project"
+         href="https://lauriecallihan.com/">
+        <div class="icon">🍎</div>
+        <h2>Golden Apple</h2>
+        <p>
+          Explore the Golden Apple homeschool project.
+        </p>
+      </a>
+
+    </section>
+
+    <footer>
+      Your Business Seen
+    </footer>
+
+  </main>
 
 </body>
-
 </html>
